@@ -1,0 +1,734 @@
+/*
+Theme name: Portfolio Theme
+Theme author: Jonas Foldager
+Description: a theme for my portfolio
+*/
+
+/* header  */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+.header{
+    display: flex;
+   width: 100vw;
+   justify-content: center;
+   padding-top: 5px;
+}
+.logo{
+padding-left: 20px;
+width: 45vw;
+}
+
+.sometags{
+ display: flex;
+ flex-direction: row;
+align-items: center;
+justify-content: end;
+width: 45vw;
+
+
+}
+
+.linkedin{
+    height:30px ;
+    width: 30px;
+    margin-right: 5px;
+}
+.linkedin:hover{
+    background-color: #787E67;
+    
+}
+.instagram{
+    height:30px ;
+    width: 30px;
+    margin-right: 5px;
+}
+.instagram:hover{
+    background-color: #AF9279;
+}
+.facebook{
+    height:30px ;
+    width: 30px;
+    margin-right: 40px;
+}
+
+.facebook:hover{
+    background-color: #96BBBB;
+}
+
+/* index / forside */
+.video-bg-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* Media queries to keep aspect ratio over different devices */
+@media (min-aspect-ratio: 16/9) {
+    .bg-video {
+        height: 300%;
+        top: -100%;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .bg-video {
+        width: 300%;
+        left: -100%;
+        max-width: initial; /* reset for some themes that have predefined widths for <video> elements */
+    }
+}
+/* Replace video with image on mobile devices */
+@media all and (max-width: 767px) {
+    .video-bg-container {
+        background: url('poster.jpg') no-repeat 50% / cover;
+    }
+    .bg-video {
+        display: none;
+    }
+}
+body{
+    margin: 0%;
+    padding: 0%;
+
+}
+
+ul{
+    list-style-type: none;
+   padding-top: 100px;
+}
+li{
+margin-top: 30px;
+}
+
+a:link
+{
+    text-decoration: none;
+    color: black;
+    font-size: 70px;
+    font-family: 'Bebas Neue', cursive;
+    
+}
+a:link:hover{
+    color: #A78064;
+}
+/* 
+underside
+video produktion
+info
+ */
+.baggrund-farve-video{
+    background-color: #787E67;
+}
+.backgraund-video{
+   
+    width: 100vw;
+    height: 400%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+}
+
+
+.info-video{
+    background-color: #EAE9E7;
+    width: 80vw;
+    height: 95%;
+    padding-top: 15px;
+
+}
+
+.intro-video{
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info-teskt{
+    width: 50vw;
+    height: 300px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1, h1 {
+    padding-bottom: 30px;
+}
+
+.beskrivelse-video{
+  padding-left: 20px;
+ 
+}
+
+.billede-video{
+    width: 29vw;
+}
+
+/* 
+underside
+video produktion
+portfolio produkter
+ */
+
+.gruppe1{
+width: 80%;
+height: 60vh;
+margin-top: 30px;
+
+display: flex;
+
+}
+
+
+.projekt6-overskift{
+    position: absolute;
+    color: #787E67;
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    opacity: 0;
+}
+
+.projekt6-overskift:hover{
+    opacity: 1;
+    transition: .4s ease;
+    height: 60vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    
+}
+.overskift6{
+    height: 60vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.projekt6-billede{
+width: 80vw;
+height: 100%;
+object-fit: cover;
+}
+
+
+.gruppe2{
+    width: 100%;
+    height: 60vh;
+    margin-top: 30px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .projekt7-overskift{
+        position: absolute;
+        color: #EAE9E7;
+        font-size: 80px;
+        font-family: 'Bebas Neue', cursive;
+        opacity: 0;
+    }
+    
+    .projekt7-overskift:hover{
+        opacity: 1;
+        transition: .4s ease;
+        height: 60vh;
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }   
+    .overskift7{
+        height: 60vh;
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+    }
+    .projekt7-billede{
+        width: 80vw;
+        height: 100%;
+        object-fit: cover;
+        }
+ .gruppe3{
+          width: 100%;
+         height: 60vh;          
+  margin-top: 30px;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
+     
+.projekt8-overskift{
+    position: absolute;
+    color: #787E67;
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    opacity: 0;
+}
+
+.projekt8-overskift:hover{
+    opacity: 1;
+    transition: .4s ease;
+    height: 60vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+} 
+.overskift8{
+    height: 60vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}  
+.projekt8-billede{
+    width: 80vw;
+    height: 100%;
+    object-fit: cover;
+    }
+
+.gruppe4{
+    width: 100%;
+height: 60vh;
+margin-top: 30px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.projekt9-overskift{
+    position: absolute;
+    color: #787E67;
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    opacity: 0;
+}
+
+.projekt9-overskift:hover{
+    opacity: 1;
+    transition: .4s ease;
+    height: 60vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}   
+.overskift9{
+    height: 60vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.projekt9-billede{
+    width: 80vw;
+    height: 100%;
+    object-fit: cover;
+    }
+
+
+.gruppe5{
+    width: 100%;
+    height: 60vh;
+    margin-top: 30px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projekt10-overskift{
+    position: absolute;
+    color: #787E67;
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
+    opacity: 0;
+}
+
+.projekt10-overskift:hover{
+    opacity: 1;
+    transition: .4s ease;
+    height: 60vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}   
+
+.overskift10{
+    height: 60vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.projekt10-billede{
+    width: 80vw;
+    height: 100%;
+    object-fit: cover;
+    }
+
+
+
+
+
+
+
+/* 
+underside
+grafisk design
+ */
+
+.backgraund-color {
+    background-color: #96BBBB;
+}
+
+.backgraund-design{
+    width: 100vw;
+    height: 400vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    
+}
+.info-billede{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.billede-design{
+    height: 300px;
+    width: 300px ; 
+    margin-top: 30px;
+}
+.info-design{
+    background-color: #EAE9E7;
+    width: 80vw;
+    height: 95%;
+    padding-top: 15px;
+}
+.intro-design{
+height: 300px;
+display: flex;
+flex-direction: row;
+}
+
+.info-teskt-design{
+    width: 50vw;
+    height: 300px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1, h1 {
+    padding-bottom: 30px;
+}
+
+.beskrivelse-design{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* grafisk design produkter */
+.produkt1{
+    width: 100%;
+    height: 60vh;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: row;  
+}
+
+.billede1-produkt{
+height: 60vh;
+width: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.projekt1-billede{
+    height: 60vh;
+}
+
+.beskrivelse1-produkt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-right: 10px;
+}
+.projekt1-overskift{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    
+}
+
+.projekt1-brodtekst{
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.produkt2{
+    width: 100%;
+    height: 60vh;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: row;  
+}
+
+.billede2-produkt{
+height: 60vh;
+width: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.projekt2-billede{
+    height: 60vh;
+}
+
+.beskrivelse2-produkt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-right: 10px;
+}
+.projekt2-overskift{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+}
+
+.projekt2-brodtekst{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.produkt3{
+    width: 100%;
+    height: 60vh;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: row;  
+}
+
+.billede3-produkt{
+height: 60vh;
+width: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.projekt3-billede{
+    height: 60vh;
+}
+
+.beskrivelse3-produkt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-right: 10px;
+}
+.projekt3-overskift{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+}
+
+.projekt3-brodtekst{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.produkt4{
+    width: 100%;
+    height: 60vh;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: row;  
+}
+
+.billede4-produkt{
+height: 60vh;
+width: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.projekt4-billede{
+    height: 20vh;
+}
+
+.beskrivelse4-produkt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-right: 10px;
+}
+.projekt4-overskift{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+}
+
+.projekt4-brodtekst{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/* 
+underside
+Om Fold Media
+ */
+.baggrund-farve-om{
+    background-color: #AF9279;
+}
+
+ .backgraund-om{
+    width: 100vw;
+    height: 270%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+}
+
+.profil-om{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overskift-om{
+    font-family: 'Bebas Neue', cursive;
+}
+.billede-om{
+    height: 300px;
+    width: 300px ; 
+    margin-top: 30px;
+
+}
+
+.info-om{
+    background-color: #EAE9E7;
+    width: 80vw;
+    height: 240vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+.intro-om{
+   
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+}
+.info-teskt-om{
+    width: 50vw;
+    height: 300px;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1, h1 {
+    padding-bottom: 30px;
+}
+
+.beskrivelse-om{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.kontakt-info{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.kontakt-overskift{
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+
+.profilbillede-om{
+    height: 60px;
+    width: 60px;
+}
+img{
+    size: 50px;
+}
+
+.col-lg-12{
+    padding-top: 150px;
+}
+
+.cv-overskift{
+display: flex;
+justify-content: center;
+width: 100%;
+font-size: 40px;
+font-family: 'Bebas Neue', cursive;
+margin-top: 100px;
+}
+
+.cv-billede{
+display: flex;
+flex-direction: row;
+justify-content: center;
+width: 100%;
+height: 80vh;
+
+}
+
+.cv-billede1{
+margin-right: 30px;
+}
+
+.cv-billede2{
+margin-left: 30px;
+}
+
