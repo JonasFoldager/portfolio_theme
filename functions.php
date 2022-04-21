@@ -18,7 +18,7 @@ function custom_content_after_body_open_tag() { ?>
  <div class="video-bg-container">
     <video loop muted autoplay poster="<?php echo get_stylesheet_directory_uri( )?>/image/whitejpg" class="bg-video">
        
-        <source src="<?php echo get_stylesheet_directory_uri( )?>/video/Man Drawing on a Piece of Paper.mp4" type="video/mp4">
+        <source src="<?php echo get_stylesheet_directory_uri( )?>/video/Sequence 01.mp4" type="video/mp4">
     </video>
 </div>
  
