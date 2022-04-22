@@ -30,7 +30,7 @@
                               <div class="container">
                               <div class="row"> 
                                    <div class="col-lg-12">
-                                        <iframe width="1120" height="630" src="<?php echo $convertedURL; ?>" frameborder="0" allow="acceleromter; autoplay; 
+                                        <iframe class="youtube-video" src="<?php echo $convertedURL; ?>" frameborder="0" allow="acceleromter; autoplay; 
                                         clipbord-write; encrypted; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
