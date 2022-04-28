@@ -16,7 +16,7 @@ add_action("after_setup_theme", "hotelcms_register_menu");
 function custom_content_after_body_open_tag() { ?>
  
  <div class="video-bg-container">
-    <video loop muted autoplay poster="<?php echo get_stylesheet_directory_uri( )?>/image/whitejpg" class="bg-video">
+    <video loop muted autoplay poster="<?php echo get_stylesheet_directory_uri( )?>/image/white.jpeg" class="bg-video">
        
         <source src="<?php echo get_stylesheet_directory_uri( )?>/video/Sequence 01.mp4" type="video/mp4">
     </video>

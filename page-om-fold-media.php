@@ -11,8 +11,8 @@
                                    <p class="beskrivelse-om"><?php the_field("intro-om-fold-media") ?></p>
                                    <div class="kontakt-info">
                                         <p class="kontakt-overskift">Kontakt mig på:</p>
-                                        <p><?php the_field("email") ?></p>
-                                        <p><?php the_field("tlf-nummer") ?></p>
+                                        <p class="email"><?php the_field("email") ?></p>
+                                        <p class="tlf-nummer"><?php the_field("tlf-nummer") ?></p>
                                    </div>
                                    
                          </div>
@@ -43,10 +43,10 @@
                     </div>
                     <div class="cv">
                          <p class="cv-overskift"><?php the_field("cv-overskift") ?></p>
-                         <div class="cv-billede">
+          
                               <img class="cv-billede1" src="<?php the_field("cv-billede1") ?>" alt="">
                               <img class="cv-billede2" src="<?php the_field("cv-billede2") ?>" alt="">
-                         </div>
+                         
                     </div>
                </div>
                

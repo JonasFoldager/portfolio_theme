@@ -1,7 +1,7 @@
 <div class="header">
         <div class="logo">
             <a href="<?php echo get_home_url() ?>">
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/image/logo-stor.png">
+                <img class="logo" src="<?php echo get_stylesheet_directory_uri() ?>/image/logo-stor.png">
             </a>
         </div>
         <div class="sometags">
